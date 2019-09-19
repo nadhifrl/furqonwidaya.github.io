@@ -1,0 +1,50 @@
+.background {
+    font-family: 'Chilanka', cursive;
+    width: 100%;
+    padding: 80px 80px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background-color: #aaa;
+}
+.background {
+    background-color: #aaa;
+    background-image: url(https://cdn2.tstatic.net/travel/foto/bank/images/jember_20170813_131727.jpg);
+    background-size: cover;
+    position: relative;
+ }
+
+h1{
+
+	background-color: orange;
+	text-align: center;
+	color: green;
+	padding: 10px;
+	border-radius: 7px;
+}
+
+td{
+	color:white;
+}
+
+input[type=submit]{
+background-color: blue;
+border-radius:20px;
+color: white;
+}
+
+input[type=reset]{
+background-color: red;
+border-radius:20px;
+color: white;
+}
+
+
+
+
+
+
+
+
+
+

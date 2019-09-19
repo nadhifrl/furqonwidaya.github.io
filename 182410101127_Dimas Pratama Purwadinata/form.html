@@ -1,0 +1,81 @@
+<!DOCTYPE HTM>
+<html>
+<head>
+	<title> pendaftaran </title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+	<h1> FORM PENDAFTARAN</h1>
+
+	<div class="background">
+
+	<form action="#" method="get">
+	<table width="20%" align="center" cellspacing="3" cellpadding="10">
+	<tr>
+		<td>Nama Lengkap</td>
+		<td>:</td>
+		<td><input type="text" name="Nama" placeholder="nama Lengkap"></td>
+	</tr>
+
+	<tr>
+		<td>Password</td>
+		<td>:</td>
+		<td><input type="Password" name="Password" placeholder="Password"></td>
+	</tr>
+
+	<tr>
+		<td>Email</td>
+		<td>:</td>
+		<td><input type="email" name="email" placeholder="email"></td>
+	</tr>
+
+	<tr>
+		<td>Alamat</td>
+		<td>:</td>
+		<td><textarea name="biografi" placeholder="alamat"></textarea></td>
+	</tr>
+
+	<tr>
+		<td>Birthday</td>
+		<td>:</td>
+		<td><input type="date" name="HBDY"></td>
+	<tr>
+
+	<tr>
+		<td>NO HP</td>
+		<td>:</td>
+		<td><input type="tel" name="hp" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="NO HP">
+	</tr>
+		<td>Jenis Kelamin</td>
+		<td>:</td>
+		<td colspan="5">
+			<input type="radio" name="JK" value="laki-laki">laki-laki<br>
+			<input type="radio" name="JK" value="wanit">wanita<br>
+		</td>
+	</tr>
+
+	 <tr>
+  		<td>Hoby</td>
+  		<td>:</td>
+  		<td>
+  			<input type="checkbox" name="hoby1" value="tenis">tenis<br>
+  			<input type="checkbox" name="hoby1" value="tenis">bekel<br>
+  			<input type="checkbox" name="hoby1" value="tenis">basket<br>
+  		</td>
+  	</tr>
+
+	<tr>
+   		<td colspan="2">
+   			<input type="submit" name="submit" value="Simpan" onclick="alert('siippp sukses sudah');"/></td>
+    	<td>
+    		<input type="reset" name="Hapus" value="Hapus">
+  		 </td>
+  	</tr>
+
+	</form>
+	</table>
+
+</body>
+</html>
