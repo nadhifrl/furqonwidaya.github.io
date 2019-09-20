@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>pacebok</title>
+	<title>Kelompok 24</title>
 	<style type="text/css">
 	</style>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<h1>Pacebook</h1>
-<body>	
-<form class="regis">
-<p>FORMULIR</p>
-<input type="text" placeholder="nama lengkap"><br></br>
-<input type="number" placeholder="nomor"><br></br>
-<input type="password" placeholder="password"><br></br>
-<input type="button" name="button" value="simpan">
+	<h1>Petcebukk</h1>
+<body>
+<div class="regis">
+<p><font size="6" color="lightingblue">FORMULIR</font></p>
+<form method="post" action="proses_login.php" >	
+<table>
+<tr>
+			<td>Username: </td>
+			<td><input type="text" name="username" required></td>
+			<td>Password: </td>
+			<td><input type="password" name="password"  size="16" required></td>
+		</tr>
+		<tr>
+			<td>Nama Awal: </td>
+			<td><input type="text" name="Fnama" required></td>
+			<td>Nama Akhir: </td>
+			<td><input type="text" name="Lnama"  size="16" required></td>
+		</tr>
+		<tr>
+			<td>Tempat Lahir: </td>
+			<td><input type="text" name="tempatlahir"></td>
+			<td>Tanggal Lahir: </td>
+			<td><input type="date" name="tgllahir"></td>
+		</tr>
+		<tr>
+			<td>No. Telepon: </td>
+			<td><input type="tel" name="tel"></td>
+		</tr>
+		<tr>
+			<td>E-mail: </td>
+			<td><input type="email" name="email"  required ></td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin: </td>
+			<td><input type="radio" value="radionbutton">Laki-Laki<input type="radio" value="radionbutton">Perempuan</td>
+		</tr>
+
+		<tr>
+			<td>Alamat: </td>
+			<td><textarea></textarea></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><input type="submit" value="submit">
+			<input type="reset" value="clear"></td>
+</table>
 </form>
+</div>
 </body>
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br><br></br>
 <div class="iklan">
 		<center><img class="gambar" src="https://tpc.googlesyndication.com/simgad/18354879924560232517?sqp=4sqPyQQrQikqJwhfEAEdAAC0QiABKAEwCTgDQPCTCUgAUAFYAWBfcAJ4AcUBLbKdPg&rs=AOga4qkN996jVuSq0kgReP6WJOgeXCCiaQ"></center>
 	</div>
