@@ -1,81 +1,63 @@
-<!DOCTYPE HTM>
+<!DOCTYPE html>
 <html>
 <head>
-	<title> pendaftaran </title>
+	<title>Form</title>
 	<link rel="stylesheet" type="text/css" href="form.css">
 </head>
-
 <body>
+<h1> FORM PENDAFTARAN</h1>
+<div class="Daftar">
+	<p class="tulisan_login">Daftar</p>
+ 
+	<form>
+		<label>Username</label>
+		<input type="text" name="username" class="form_login" placeholder="Username">
+ 
+		<label>Password</label>
+		<input type="text" name="password" class="form_login" placeholder="Password">
 
-	<h1> FORM PENDAFTARAN</h1>
+		<label>Email</label>
+		<input type="email" name="email" class="form_login" placeholder="email">
 
-	<div class="background">
+		<label>Birthday</label>
+		<input type="date" name="HBDY" class="form_login" placeholder="Birthday">
 
-	<form action="#" method="get">
-	<table width="20%" align="center" cellspacing="3" cellpadding="10">
-	<tr>
-		<td>Nama Lengkap</td>
-		<td>:</td>
-		<td><input type="text" name="Nama" placeholder="nama Lengkap"></td>
-	</tr>
+		<label>No HP</label>
+		<input type="tel" name="hp" pattern="^\d{3}-\d{3}-\d{4}$"  class="form_login"placeholder="NO HP">
 
-	<tr>
-		<td>Password</td>
-		<td>:</td>
-		<td><input type="Password" name="Password" placeholder="Password"></td>
-	</tr>
+		<label>jenis kelamin</label>
+		 <select class="form_login">
+                    <option disabled selected>--Jenis Kelamin--</option>
+                    <option value="laki-laki">Laki-Laki</option>
+                    <option value="perempuan">Perempuan</option>
+        </select>
 
-	<tr>
-		<td>Email</td>
-		<td>:</td>
-		<td><input type="email" name="email" placeholder="email"></td>
-	</tr>
+        <label>saya setuju</label>
+        <input type="checkbox">
+ 
+		<input type="submit" class="tombol_login" value="Daftar" onclick="alert('Berhasil sekaliii');"/>
 
-	<tr>
-		<td>Alamat</td>
-		<td>:</td>
-		<td><textarea name="biografi" placeholder="alamat"></textarea></td>
-	</tr>
+ 
+		<br/>
+		<br/>
+		<center>
+			<a href="#" class="kembali">kembali</a>
+		</center>
+	</form>
+	
+</div>
 
-	<tr>
-		<td>Birthday</td>
-		<td>:</td>
-		<td><input type="date" name="HBDY"></td>
-	<tr>
+<div class="login">
+	<form>
+		<p class="tulisan_login">login</p>
+		<label>Username</label>
+		<input type="text" name="username" class="form_login" placeholder="Username">
+ 
+		<label>Password</label>
+		<input type="text" name="password" class="form_login" placeholder="Password">
 
-	<tr>
-		<td>NO HP</td>
-		<td>:</td>
-		<td><input type="tel" name="hp" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="NO HP">
-	</tr>
-		<td>Jenis Kelamin</td>
-		<td>:</td>
-		<td colspan="5">
-			<input type="radio" name="JK" value="laki-laki">laki-laki<br>
-			<input type="radio" name="JK" value="wanit">wanita<br>
-		</td>
-	</tr>
-
-	 <tr>
-  		<td>Hoby</td>
-  		<td>:</td>
-  		<td>
-  			<input type="checkbox" name="hoby1" value="tenis">tenis<br>
-  			<input type="checkbox" name="hoby1" value="tenis">bekel<br>
-  			<input type="checkbox" name="hoby1" value="tenis">basket<br>
-  		</td>
-  	</tr>
-
-	<tr>
-   		<td colspan="2">
-   			<input type="submit" name="submit" value="Simpan" onclick="alert('siippp sukses sudah');"/></td>
-    	<td>
-    		<input type="reset" name="Hapus" value="Hapus">
-  		 </td>
-  	</tr>
+		<input type="submit" class="tombol_login" value="login" onclick="alert('siippp sukses sudah');"/>
 
 	</form>
-	</table>
-
 </body>
 </html>
