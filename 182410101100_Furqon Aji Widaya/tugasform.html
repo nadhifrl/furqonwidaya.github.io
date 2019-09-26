@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<style type="text/css">
-	
 	</style>
 	<link rel="stylesheet" type="text/css" href="style.css">
 <head>
 	<title>Tugas Formulir</title>
 </head>
-<body bgcolor="#33FFDD">
-	<center><img src="https://img.icons8.com/windows/96/000000/user-male-circle.png"></center>
-	<h2 align="center"><font size="6" color="#C70039 "><u>FORMULIR</u></font></h2>
+<body>
+	<img src="https://img.icons8.com/windows/96/000000/user-male-circle.png">
+	<h2>LOGIN and FORM</h2>
 <div class="form">
 <form action="/action_page.php" method="get">
 	<table class="table1" >
-		<div class="user" >
 		<tr>
 			<td align="center">Username: </td>
 			<td><input type="text" name="username"  placeholder="Username" required ></td>
@@ -22,52 +20,38 @@
 			<td align="center">Password: </td>
 			<td><input type="password" name="password"  placeholder="Password" required ></td>
 		</tr>
-		</div>
-		<div class="ok">
 		<tr>
 			<td>&nbsp;</td>
-			<td><input type="submit" value="LOGIN">
-			<input type="reset" value="FORGET"></td>
+			<td><input class="ok" type="submit" value="LOGIN">
+			</td>
 		</tr>
-		</div>
 	</table>
 	<table class="table1">
 		<tr>
-			<div class="name">
 			<tr>
 			<td>Nama Awal: </td>
 			<td><input type="text" placeholder="Nama Depan"  required ></td>
 			<td>Nama Akhir: </td>
 			<td><input type="text" placeholder="Nama Belakang"  size="16"  required ></td>
 		</tr>
-		</div>
-		<div>
-		<tr class="born">
+		<tr>
 			<td>Tempat Lahir: </td>
 			<td><input type="text" placeholder="Tempat lahir"  required ></td>
 			<td>Tanggal Lahir: </td>
 			<td><input type="date" placeholder="Tanggal lahir"  required ></td>
 		</tr>
-		</div>
-		<div class="phone">
 		<tr>
 			<td>No. Telepon: </td>
 			<td><input type="tel" placeholder="Telepon"></td>
 		</tr>
-		</div>
-		<div class="email">
 		<tr>
 			<td>E-mail: </td>
 			<td><input type="email" placeholder="Email"  required ></td>
 		</tr>
-		</div>
-		<div class="gender">
 		<tr>
 			<td>Jenis Kelamin: </td>
 			<td><input type="radio" value="radionbutton">Laki-Laki<input type="radio" value="radionbutton">Perempuan</td>
 		</tr>
-		</div>
-		<div class="city">
 		<tr>
 			<td>Kabupaten: </td>
 			<td><select>
@@ -79,8 +63,6 @@
             <option value="Situbondo">Situbondo</option>
         	</select></td>
 		</tr>
-		</div>
-		<div class="dist">
 		<tr>
 			<td>Kecamatan: </td>
 			<td><select>
@@ -92,20 +74,17 @@
             <option value="Rambipuji">Rambipuji</option>
         	</select></td>
 		</tr>
-		</div>
-		<div class="address">
 		<tr>
 			<td>Alamat: </td>
 			<td><textarea></textarea></td>
 		</tr>
 		</div>
 		</tr>
-		<div class="ok">
 		<tr>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
-			<td><input type="submit" value="submit">
-			<input type="reset" value="clear"></td>
+			<td><input class="ok" type="submit" value="submit" onclick="alert('Data Tersimpan')">
+			<input class="ok" type="reset" value="clear"></td>
 		</tr>
 		</table>
 </div>
