@@ -1,19 +1,57 @@
-.background {
-    font-family: 'Chilanka', cursive;
-    width: 100%;
-    padding: 80px 80px;
-    box-sizing: border-box;
-    text-align: center;
-    color: white;
-    background-color: #aaa;
-}
-.background {
-    background-color: #aaa;
+body{
+    padding-top: 80px; 
     background-image: url(https://cdn2.tstatic.net/travel/foto/bank/images/jember_20170813_131727.jpg);
     background-size: cover;
-    position: relative;
- }
+	font-family: sans-serif;
+}
+ 
+h1{
+	text-align: center;
+	font-weight: 300;
+}
+ 
+.tulisan_login{
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+ 
+.Daftar{
+	width: 40%;
+	background: transparent;
+	border: 3px solid rgba(0,255,255);
+	padding: 20px;
+	float: left;
+}
+.login{
+	width: 40%;
+	background: transparent;
+	border: 3px solid rgba(0,255,255);
+	padding: 20px;
+	float: right;
+}
 
+label{
+	font-size: 11pt;
+	color: white;
+}
+ 
+.form_login{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+.tombol_login{
+	background: blue;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+}
 h1{
 
 	background-color: orange;
@@ -22,22 +60,12 @@ h1{
 	padding: 10px;
 	border-radius: 7px;
 }
-
-td{
-	color:white;
-}
-
-input[type=submit]{
-background-color: blue;
-border-radius:20px;
-color: white;
-}
-
-input[type=reset]{
-background-color: red;
-border-radius:20px;
-color: white;
-}
+    @media screen and (max-width:1000px) {
+    .Daftar , .login {width:90%;}}
+    .form_login{
+        width: 100%;
+        margin: 8px 0;
+    }
 
 
 
