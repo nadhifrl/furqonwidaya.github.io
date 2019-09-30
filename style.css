@@ -1,0 +1,64 @@
+.menu ul{
+    padding: 5px;
+    text-align: center;
+	background-color: rgb(220 220 220);
+	color: black;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px #2095F2;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ul.submenu li {
+    display: block;
+}
+ul.submenu li a {
+    display: block;
+    padding: 5px 10px;
+ }
+ ul.submenu {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    display: none;
+    z-index: 2;
+ }
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.menu  ul li:hover ul.submenu  {
+    display: block;
+}
+
+.conten {
+    background-color: #00FFFF;
+    min-height: 500px;
+}
+.header {
+    background-color: #00FFFF;
+    min-height: 50px;
+    text-align: center;
+}
+.logo img{
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+}
+.awal img{
+	width: 1300px;
+	height: 450px;
+	border: 1px;
+	position: relative;
+	z-index: 1;
+	top: 0px;
+	border-radius: : 7px;
+	box-shadow: 0 3px 6px black;
+}
