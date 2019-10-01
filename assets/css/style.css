@@ -1,0 +1,160 @@
+
+.conten {
+    background-color: #00FFFF;
+    min-height: 500px;
+}
+.header {
+    background-color: #00FFFF;
+    min-height: 50px;
+    text-align: center;
+}
+.logo img{
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+}
+.awal img{
+    width: 1300px;
+    height: 450px;
+    border: 1px;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    border-radius: : 7px;
+    box-shadow: 0 3px 6px black;
+}
+.menu ul{
+    padding: 5px;
+    text-align: center;
+	background-color: rgb(220 220 220);
+	color: black;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px #2095F2;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ul.submenu li {
+    display: block;
+}
+ul.submenu li a {
+    display: block;
+    padding: 5px 10px;
+ }
+ ul.submenu {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    display: none;
+    z-index: 2;
+ }
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.menu  ul li:hover ul.submenu  {
+    display: block;
+}
+
+.allwisata {
+    width: 1300px;
+    height: 900px;
+    margin-top: 1px;
+    margin-left: 21px;
+    margin-right: 10px;
+    background: #78efe8;
+    color: #78efe8;
+
+}
+.wisata {
+    margin-left: 80px;
+    margin-right: 100px;
+    margin-top: 70px;
+    float: left;
+    width: 250px;
+    position: relative;
+}
+.wisata img {
+    width: 100%;
+    height: auto;
+}
+h4 {
+    color: #fdf3f3;
+    position: absolute;
+    bottom: -10px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+.nomor{
+    position: absolute;
+    color: #fdf3f3;
+    font-size: 35px;
+    margin-top: 1080px;
+    margin-left: 800px;
+}
+.logodown{
+    border: 1px solid #0a0a0a;
+    width: 98.5%;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    background: #ffff;
+    padding: 1px;
+}
+.logodown img{
+    width:180px; 
+    height:60px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    position: relative;
+}
+.footer{
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 40px;
+    background: #f4f2f2;
+    width: 98.5%;
+    height: 60px;
+    float: center;
+    padding: 1px;
+    border: 1px solid #9c9c9c;
+}
+.sosmed{
+    float: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    position: relative;
+}
+.sosmed img {
+    width: 40%;
+    height:40%;
+
+}
+.situs{
+    margin-top: 20px;
+    float: left;
+    padding-bottom: 4px;
+    margin-left: 5px;
+    
+}
+.about{
+    margin-top: 20px;
+    margin-right: -190px;
+    float: right;
+    padding-bottom: 4px;
+    padding-right: -5px;
+    
+}
+
+
+@media screen and (max-width: 1000px){
+.logo, .logo img,.navbar,.navbar li a,.submenu, .logo img {width:90%;}
