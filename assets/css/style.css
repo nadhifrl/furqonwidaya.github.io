@@ -215,10 +215,10 @@ html, body{
     width: 500px;
     height: 250px;
 }
-.deskripsi p{
+.deskripsi{
     color: #363737;
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
 }
 
 @media screen and (max-width: 100%){
