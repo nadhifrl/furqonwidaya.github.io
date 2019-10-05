@@ -1,171 +1,212 @@
-
-.header {
-    background-color: #00FFFF;
-    min-height: 50px;
-    text-align: center;
-}
-}
-.logo img{
-    width: 250px;
-    padding: 10px;
-    text-align: center;
-}
-.awal img{
-    width: 1300px;
-    height: 450px;
-    border: 1px;
-    margin-top: -15px;
-    position: relative;
-    z-index: 1;
-    border-radius: : 10px;
-    padding:10px;
-    box-shadow: 0 3px 6px solid #fff;
-    opacity: 2; 
-    display: block;
-}
-.menu ul{
-    margin-top: 3px;
-    background-color: #f4f2f2;
-    text-align: center;
-	color: black;
-	padding: 12px;
-    border: 1px solid  #9c9c9c;
-	box-shadow: 0 3px 6px #2095F2;
-}
-.menu ul li{
-    display: inline-block;
-}
-.menu ul li a{
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #0a0a0a;
-    font-size: 20px;
-}
-ul.submenu li {
-    display: block;
-}
-ul.submenu li a {
-    display: block;
-    padding: 5px 10px;
- }
- ul.submenu {
-    background-color: #eee;
-    border: 1px solid #ccc;
-    text-align: left;
-    position: absolute;
-    top: 20px;
-    display: none;
-    z-index: 2;
- }
-.submenu a:hover{
-    color: #0a0a0a;
-    background: #f4f2f2;}
-.menu ul li {
-    display: inline-block;
-    position: relative;
-}
-.menu  ul li:hover ul.submenu  {
-    display: block;
-}
-.edge{
-    width: 100%;
-    height: 900px;
-    background-color: #78efe8;
-
-}
-.allwisata {
-    width: 1300px;
-    height: 900px;
-    margin-top: 1px;
-    margin-left: 21px;
-    margin-right: 10px;
-    background: #78efe8;
-    color: #78efe8;
-}
-.wisata {
-    margin-left: 100px;
-    margin-right: 70px;
-    margin-top: 70px;
-    float: left;
-    width: 250px;
-    position: relative;
-}
-.wisata img {
-    width: 100%;
-    height: auto;
-}
-h4 {
-    color: #fdf3f3;
-    position: absolute;
-    bottom: -10px;
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-
-}
-.nomor{
-    position: absolute;
-    color: #fdf3f3;
-    font-size: 35px;
-    margin-top: 1080px;
-    margin-left: 800px;
-}
-.logodown{
-    border: 1px;
-    width: 98.5%;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    background: #ffff;
-    padding: 1px;
-}
-.logodown img{
-    width:180px; 
-    height:60px;
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
-    position: relative;
-}
-.footer{
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 40px;
-    background: #f4f2f2;
-    width: 98.5%;
-    height: 85px;
-    float: center;
-    padding-bottom: 6px;
-    border: 1px solid #9c9c9c;
-    position: relative;
-    display: block;
-}
-.sosmed{
-    float: right;
-    padding-top: 0px;
-    padding-bottom: 2px;
-    padding-right: 3px;
-    position: relative;
-}
-.sosmed img {
-    width: 40px;
-    height: 40px;
-    position: relative;
-}
-.situs{
-    margin-top: 40px;
-    margin-bottom: 10px;
-    margin-right: -190px;
-    float: left;
-    padding-right: -5px;
-}
-.about{
-    margin-top: 40px;
-    margin-bottom: 12px;
-    margin-right: -115px;
-    float: right;
-    
-}
-
-
-@media screen and (max-width: 1000px){
-.logo, .logo img, .awal img, .menu ul, .allwisata, .wisata, h4,.footer, .logodown {width:90%;}
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html, body{
+        height: 100%;
+        background-color: white;
+    }
+    .fixed{
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+    }
+    .header {
+        background-color: #78efe8;
+        text-align: center;
+        width: 100%;
+    }
+    .logo img{
+        width: 230px;
+        padding: 10px;
+        text-align: center;
+    }
+    .menu ul{
+        margin-top: -5px;
+        background-color: #f4f2f2;
+        text-align: center;
+    	color: black;
+    	padding: 12px;
+        border: 1.2px solid  #9c9c9c;
+    }
+    .menu ul li{
+        display: inline-block;
+        position: relative;
+    }
+    .menu ul li a{
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #363737;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .menu ul li a:hover{
+        background-color: #78efe8;
+        color: #363737;
+    }
+    .menu:hover .submenu{
+        margin-top: 10px;
+    }
+    .submenu {
+        position: absolute;
+        display: none;
+        z-index: 2;
+        width: initial;
+     }
+    .submenu li a {
+        width:70px;
+        display: block;
+        text-align: center;
+        z-index: 1;
+        background-color: #f4f2f2;
+        color: #363737 ;
+     }
+    .submenu li a:hover{
+        display: inline-block;
+        width:70px;
+        background-color: #78efe8;
+    }
+    .menu  ul li:hover ul.submenu  {
+        display: block;
+    }
+    .awal h4{
+        z-index: 999;
+        margin-top: -300px;
+        font-size: 53px;
+        position: absolute;
+        width: 35%;
+    }
+    .awal img{
+        top: 5;
+        bottom: 20;
+        font-family: sans-serif;
+        padding-top: 140px;
+        width: 100%;
+        min-width: 1024px;
+        height: 450px;
+        min-height: auto;
+        position: relative;
+        opacity: 0.7; 
+        display: block;
+        border-radius: 2px 2px 2% 2%;
+        box-shadow: 15px 15px 10px #292929;
+        background-size: 100%;
+    }
+    .edge{
+        background-color: #8ef5e7;
+        width: initial;
+        height: initial;   
+    }
+    .allwisata {
+        width: 1300px;
+        height: 900px;
+        margin-top: -70px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #8ef5e7;
+    }
+    .wisata {
+        top: 50;
+        left: 50;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        float: left;
+        width: 250px;
+        position: relative;
+    }
+    .wisata img {
+        opacity: 0.8;
+        margin-top: 30px;
+        width: 280px;
+        height: 170px;
+        box-shadow: 6px 6px 12px #292929;
+    }
+    .wisata h4 {
+        color: #fdf3f3;
+        position: absolute;
+        bottom: 30px;
+        font-size: 25px;
+        width: 100%;
+    }
+    .wisata img:hover{
+        opacity: 1;
+    }
+    .next{
+        width: 150px;
+        height: auto;
+        bottom: -750;
+        left: 700;
+    }
+    .next p{
+        bottom: -100;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 30px;
+        color: #363737;
+        width: 30px;
+        float: left;
+        position: relative;
+    }
+    .logodown{
+        border: 1px;
+        width: 98.5%;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        background: #ffff;
+        padding: 1px;
+    }
+    .logodown img{
+        width:180px; 
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        position: relative;
+    }
+    .footer{
+        margin-bottom: 0px;
+        background: #f4f2f2;
+        width: 100%;
+        height: 55px;
+        float: center;
+        padding-bottom: 6px;
+        border: 1px solid #9c9c9c;
+        position: relative;
+        display: block;
+    }
+    .footer p{
+        bottom: -20;
+        font-size: 10px;
+        position: relative;
+        color: #363737;
+    }
+    .sosmed{
+        float: right;
+        padding-top: 6px;
+        padding-bottom: 2px;
+        padding-right: 5px;
+        position: relative;
+    }
+    .sosmed img {
+        right: 5;
+        width: 25px;
+        height: 25px;
+        position: relative;
+    }
+    .situs{
+        margin-top: 20px;
+        margin-bottom: 12px;
+        margin-right: -190px;
+        margin-left: 20px;
+        float: left;
+    }
+    .about{
+        margin-top: 20px;
+        margin-bottom: 12px;
+        margin-right: -85px;
+        float: right;
+        padding-right: 5px;
+    }
+    @media screen and (max-width: 100%){
+    .logo, .awal img, .menu ul,  .edge, .allwisata, .wisata, .wisata img, .logodown, .footer, .footer p {width:90%;}
