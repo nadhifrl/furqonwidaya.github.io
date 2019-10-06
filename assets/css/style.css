@@ -82,7 +82,6 @@ html, body{
     font-family: sans-serif;
     padding-top: 140px;
     width: 100%;
-    min-width: 1024px;
     height: 450px;
     min-height: auto;
     position: relative;
@@ -150,7 +149,7 @@ html, body{
 }
 .logodown{
     border: 1px;
-    width: 98.5%;
+    width: 100%;
     margin-bottom: 0px;
     margin-left: 20px;
     background: #ffff;
@@ -209,17 +208,34 @@ html, body{
 .bgatas h4{
     font-size: 20px;
     color: #363737;
-
 }
 .bgatas img{
     width: 500px;
-    height: 250px;
+    height: auto;
 }
 .deskripsi{
+    width: 1200px;
+    height: 400px;
+}
+.deskripsi p{
     color: #363737;
     font-size: 15px;
     text-align: justify;
+    padding: 3px;
 }
-
+.deskripsi h1{
+    text-align: justify;
+    color: #363737;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+}
+.deskripsi ol li a{
+    display: block;
+    text-align: justify;
+    color: #363737;
+    font-size: 15px;
+    padding: 3px;
+}
 @media screen and (max-width: 100%){
 .logo, .awal img, .menu ul,  .edge, .allwisata, .wisata, .wisata img, .logodown, .footer, .footer p {width:90%;}
