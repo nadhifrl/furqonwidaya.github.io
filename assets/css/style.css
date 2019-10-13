@@ -3,13 +3,13 @@
     padding: 0;
 }
 html, body{
-    height: 100%;
+    width: 100%;
     background-color: white;
 }
 .fixed{
     width: 100%;
     position: fixed;
-    z-index: 9999;
+    z-index: 10;
 }
 .header {
     background-color: #78efe8;
@@ -69,8 +69,11 @@ html, body{
 .menu  ul li:hover ul.submenu  {
     display: block;
 }
+.awal{
+	height: 450px;
+	width:100%;
+}
 .awal h4{
-    z-index: 999;
     margin-top: -300px;
     font-size: 53px;
     position: absolute;
@@ -80,18 +83,16 @@ html, body{
     top: 5;
     bottom: 20;
     font-family: sans-serif;
-    padding-top: 140px;
+	padding-top: 140px;
     width: 100%;
-    height: 450px;
-    min-height: auto;
-    position: relative;
+    height: 100%;
     opacity: 0.7; 
-    display: block;
     border-radius: 2px 2px 2% 2%;
     box-shadow: 15px 15px 10px #292929;
     background-size: 100%;
 }
 .edge{
+	margin-top:150px;
     background-color: #8ef5e7;
     width: 100%;
     height: auto;   
@@ -99,7 +100,6 @@ html, body{
 .allwisata {
     width: 1300px;
     height: 900px;
-    margin-top: -70px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #8ef5e7;
@@ -131,13 +131,13 @@ html, body{
 .wisata img:hover{
     opacity: 1;
 }
-.next{
+#page{
     width: 150px;
-    height: auto;
-    bottom: -750;
-    left: 700;
+    text-align: center;
 }
-.next p{
+#page a, span{
+
+	text-decoration: none;
     bottom: -100;
     padding-left: 10px;
     font-weight: bold;
@@ -218,6 +218,7 @@ html, body{
     height: 400px;
 }
 .deskripsi p{
+	text-indent: 50px;
     color: #363737;
     font-size: 15px;
     text-align: justify;
