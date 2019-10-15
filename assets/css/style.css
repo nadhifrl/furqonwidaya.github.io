@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html, body{
     width: 100%;
@@ -12,22 +13,72 @@ html, body{
     z-index: 10;
 }
 .header {
-    background-color: #78efe8;
-    text-align: center;
+    background-color: #f9f9f9;
     width: 100%;
+    height: 20%;
+    display: inline-block;
+    position: relative;
+  	border-bottom: 1px solid #EEEEEE;
+}
+.logo{
+	float: left;
+ 	width: 40%;    
+ 	padding-left: 145px;
 }
 .logo img{
-    width: 230px;
+    width: 155px;
+    height: 67px;
+    padding: 9px;
+}
+.daftarmasuk{
+	float: right;
+    width: 23%;
+    padding: 17px 0;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+}
+.reg{
+	width: 66px;
+	height: auto;
+	background: #f44336;
+	padding: 2px 0;
+	border-radius: 10px;
+	margin:0 5px;
+}
+.login{
+	width: 66px;
+	height: auto;
+	background: #555555;
+	padding: 2px 0;
+	border-radius: 10px;
+	margin:0 5px;
+}
+.reg:hover {
+	background-color: #f9f9f9;
+	color:#363737;
+}
+.login:hover {
+	background-color: #f9f9f9;
+	color:#363737;
+}
+.daftarmasuk a{
+	width: 200px;
+    height: 60px;
     padding: 10px;
-    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.menu{
+	border-bottom: 1px solid #EEEEEE;
 }
 .menu ul{
     margin-top: -5px;
-    background-color: #f4f2f2;
+    background-color: #f9f9f9;
     text-align: center;
 	color: black;
 	padding: 12px;
-    border: 1.2px solid  #9c9c9c;
 }
 .menu ul li{
     display: inline-block;
@@ -41,11 +92,12 @@ html, body{
     font-size: 15px;
 }
 .menu ul li a:hover{
-    background-color: #78efe8;
-    color: #363737;
+    background-color: #f44336;
+    color: #f9f9f9;
 }
 .menu:hover .submenu{
     margin-top: 10px;
+
 }
 .submenu {
     position: absolute;
@@ -54,152 +106,140 @@ html, body{
     width: initial;
  }
 .submenu li a {
-    width:70px;
+    width:auto;
     display: block;
     text-align: center;
     z-index: 1;
-    background-color: #f4f2f2;
+    background-color: #f9f9f9;
     color: #363737 ;
  }
 .submenu li a:hover{
     display: inline-block;
-    width:70px;
     background-color: #78efe8;
 }
 .menu  ul li:hover ul.submenu  {
     display: block;
 }
-.awal{
-	height: 450px;
-	width:100%;
+.slide{
+	background-image: url("https://cdn2.tstatic.net/travel/foto/bank/images/jember_20170813_131727.jpg");
+	width: 100%;
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+  	background-repeat: no-repeat;
+  	opacity: 0.7
 }
-.awal h4{
-    margin-top: -300px;
-    font-size: 53px;
+.slide h4{
+	text-align: center;
+	font-family: sans-serif;
+    margin-top: 228px;
+    color: white;
+    font-size: 40px;
     position: absolute;
-    width: 35%;
-}
-.awal img{
-    top: 5;
-    bottom: 20;
-    font-family: sans-serif;
-	padding-top: 140px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7; 
-    border-radius: 2px 2px 2% 2%;
-    box-shadow: 15px 15px 10px #292929;
-    background-size: 100%;
-}
-.edge{
-	margin-top:150px;
-    background-color: #8ef5e7;
-    width: 100%;
-    height: auto;   
+    width: 100%;  
 }
 .allwisata {
-    width: 1300px;
-    height: 900px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #8ef5e7;
+    width: 1115px;
+    height: 880px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+.column img {
+  width: 100%;
+  height: 200px;
+}
+  .column img {
+  width: auto;
+  height: 200px;
 }
 .wisata {
-    top: 50;
-    left: 50;
-    padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    float: left;
-    width: 250px;
-    position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
-.wisata img {
-    opacity: 0.8;
-    margin-top: 30px;
-    width: 280px;
-    height: 170px;
-    box-shadow: 6px 6px 12px #292929;
+
+.wisata a{
+	text-decoration: none;
+	color: #555;
 }
-.wisata h4 {
-    color: #fdf3f3;
-    position: absolute;
-    bottom: 30px;
-    font-size: 25px;
-    width: 100%;
-}
-.wisata img:hover{
-    opacity: 1;
+.tempat {
+  padding: 0 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
 }
 #page{
-    width: 150px;
+    width: 100%;
+    height: 7%;
     text-align: center;
+    display: inline-block;
+    position: relative;
 }
 #page a, span{
-
 	text-decoration: none;
-    bottom: -100;
     padding-left: 10px;
     font-weight: bold;
     font-size: 30px;
-    color: #363737;
+    color: #000;
     width: 30px;
-    float: left;
-    position: relative;
-}
-.logodown{
-    border: 1px;
-    width: 100%;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    background: #ffff;
-    padding: 1px;
-}
-.logodown img{
-    width:180px; 
-    height:60px;
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
-    position: relative;
 }
 .footer{
-    background: #f4f2f2;
-    width: 100%;
-    height: 62px;
-    float: center;
-    border: 1px solid #9c9c9c;
+	margin-top: 20px;
+	width: 100%;
+    height: 100%;
+    background: #555555;
 }
-.footer p{
-    bottom: -20;
-    font-size: 10px;
+.logodown{
+	max-width: 1498px;
+    width: auto;
+    align-content: center;
+    height: 45%;
+    align-items: center;
+    text-align: -webkit-center;
+    padding: 10px;
+    display: inline-block;
     position: relative;
-    color: #363737;
+}
+.logodown img {
+    width: 9%;
 }
 .sosmed{
-    float: right;
-    padding-top: 6px;
-    padding-bottom: 2px;
-    padding-right: 5px;
+	width: 100%;
+    height: 15%;
+    padding: 0 20px;
+    display: inline-block;
     position: relative;
 }
 .sosmed img {
-    right: 5;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    float: right;
+    height: 20px;
+    margin: 0 5px;
+}
+.teksbawah{
+	width: 100%;
+    height: 20%;
+    margin: 10px 0;
+    padding: 0 20px;
+    display: inline-block;
     position: relative;
+    color: #fff
 }
 .situs{
-    margin-top: 20px;
-    margin-right: -190px;
-    margin-left: 20px;
-    float: left;
+	float: left;
+    position: relative;
+    font-size: 13px;
 }
 .about{
-    margin-top: 20px;
-    margin-right: -85px;
-    float: right;
-    padding-right: 5px;
+	float: right;
+    position: relative;
+    font-size: 13px;
 }
 .bgatas{
     margin-top: 135px;
@@ -237,5 +277,64 @@ html, body{
     font-size: 15px;
     padding: 3px;
 }
-@media screen and (max-width: 100%){
-.logo, .awal img, .menu ul,  .edge, .allwisata, .wisata, .wisata img, .logodown, .footer, .footer p {width:90%;}
+ @media screen and (max-width: 1200px) {
+.allwisata {
+    width: 100%;
+}
+  .column {
+    width: 50%;
+    height: 25%;
+ }
+.daftarmasuk {
+    padding: 12px 8px;
+    font-size: 17px;
+    text-align: center;
+}
+.daftarmasuk a {
+    padding: 4px 11px;
+    margin: 21px 2px;
+    font-size: 10px;
+}
+.logo {
+    padding-left: 6px;}
+ .logodown {
+	padding: 5px;
+}
+
+.logodown img{
+	width: 20%;
+}
+.menu ul {
+    margin-top: -5px;
+    padding: 5px;
+  }
+ 
+#page a, span {
+    font-size: 17px;
+}
+.sosmed{
+	text-align: center;
+}
+.sosmed img{
+	float: none;
+}
+.teksbawah{
+	text-align: center;
+}
+.situs{
+	float: none;
+}
+.about{
+	float: none;
+}
+.bgatas h4 {
+    font-size: 18px;
+}
+.bgatas img{
+    width: 90%;
+}
+.deskripsi {
+    width: 90%;
+    height: 100%;
+}
+}
