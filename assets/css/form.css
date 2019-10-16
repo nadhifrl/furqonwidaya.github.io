@@ -20,7 +20,8 @@ body img{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    padding: 40px;
+    margin: 10px 0;
+    padding: 20px 25px;
     background: rgba(0,0,0,.8);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.5);
@@ -42,6 +43,10 @@ body img{
 
 .box .inputBox {
     position: relative;
+}
+
+.box .inputBox a{
+     text-decoration: none;;
 }
 
 .box .inputBox input {
