@@ -4,15 +4,11 @@ body {
     font-family: sans-serif;
     background-size: cover;
 }
-body img{
-    width: 100%;
-    height: auto;
-}
+
 .logo img{
     width: 230px;
     margin: 50px;
     text-align: center;
-
 }
 .box {
     position: absolute;
@@ -20,8 +16,7 @@ body img{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    margin: 10px 0;
-    padding: 20px 25px;
+    padding: 40px;
     background: rgba(0,0,0,.8);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.5);
@@ -43,11 +38,6 @@ body img{
 
 .box .inputBox {
     position: relative;
-}
-
-.box .inputBox a{
-    text-decoration: none;
-    color: #fff;
 }
 
 .box .inputBox input {
