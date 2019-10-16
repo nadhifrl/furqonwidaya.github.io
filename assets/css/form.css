@@ -46,7 +46,8 @@ body img{
 }
 
 .box .inputBox a{
-     text-decoration: none;;
+    text-decoration: none;
+    color: #fff;
 }
 
 .box .inputBox input {
