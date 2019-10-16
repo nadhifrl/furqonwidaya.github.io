@@ -4,6 +4,10 @@ body {
     font-family: sans-serif;
     background-size: cover;
 }
+body img{
+    width: 100%;
+    height: auto;
+}
 .logo img{
     width: 230px;
     margin: 50px;
