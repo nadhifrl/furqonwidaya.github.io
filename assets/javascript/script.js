@@ -9,9 +9,9 @@ function validasi() {
 		var nama = document.getElementById("nama").value;
 		var password = document.getElementById("password").value;
 		if (nama != "" && password !="") {
-			alert('login berhasil');
+			window.location.href = "homeaftrelogin.html";
 		}else{
-      alert('Anda harus mengisi data dengan lengkap !');
+      			alert('Anda harus mengisi data dengan lengkap !');
     }
 }
 
@@ -20,7 +20,7 @@ function validasiregistrasi(){
     var password = document.getElementById("password").value;
     var email = document.getElementById("email").value;
     if (nama != "" && password !="" && email !="") {
-      alert('login berhasil');
+      window.location.href = "login.html";
     }else{
       alert('Anda harus mengisi data dengan lengkap !');
     }
