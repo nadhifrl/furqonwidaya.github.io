@@ -309,7 +309,7 @@ html, body{
 }
 .newconten{
 	width: 100%
-	height:auto;
+	height:100%;
 	position: absolute;
 }
 .judul{
@@ -371,7 +371,7 @@ html, body{
 .profil:hover ul.kbawahpro  {
 	display: block;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
 .allwisata {
 	width: 100%;
 }
