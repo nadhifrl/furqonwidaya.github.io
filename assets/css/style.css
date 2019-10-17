@@ -307,6 +307,43 @@ html, body{
 	font-size: 15px;
 	padding: 3px;
 }
+.newconten{
+	width: 100%
+	height:auto;
+	position: absolute;
+}
+.judul{
+	margin-top: 93px;
+    margin-left: 570px;
+    font-size: 30px;
+    font-size: 30px;
+}
+.tambahkonten{
+	position: relative;
+    display: inline-block;
+    width: 35%;
+    height: auto;
+    margin: 11px 425px;
+    padding: 50px 63px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    background: rgba(0,0,0,.8);
+}
+.tambahkonten p{
+	margin-top: 20px;
+	color: #03a9f4;
+}
+.tambahkonten .add{
+	margin-top: 10px;
+	color: #f44336;
+}
+.tombolgabung{
+	padding: 10px 86px;
+    	margin-top: 10px;
+}
+.tombol{
+	background:#f9f9f9;
+	margin: 0px 11px;
+}
 @media screen and (max-width: 1200px) {
 .allwisata {
 	width: 100%;
