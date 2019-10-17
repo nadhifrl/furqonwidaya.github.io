@@ -344,6 +344,33 @@ html, body{
 	background:#f9f9f9;
 	margin: 0px 11px;
 }
+.kbawahpro{
+	width: 130px;
+    height: 400px;
+    padding: 0 12px;
+    border: 1px #fefefe;
+    display: none;
+    position: absolute;
+    list-style: none;
+	text-decoration: none;
+}
+.kbawahpro li a {
+	width:auto;
+	display: block;
+	text-align: center;
+	z-index: 1;
+	background-color: #f9f9f9;
+	color: #363737 ;
+	font-size: 14px;
+}
+.kbawahpro li a:hover{
+	display: block;
+	background-color: #f9f9f9;
+	height: auto;
+}
+.profil:hover ul.kbawahpro  {
+	display: block;
+}
 @media screen and (max-width: 1200px) {
 .allwisata {
 	width: 100%;
