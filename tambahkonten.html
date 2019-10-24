@@ -5,30 +5,70 @@
     <link href="assets\img\tour.png" rel="shorcut icon">
     <link rel="stylesheet" href="assets\css\style.css">
 </head>
-<body>
- <img src="assets\img\bglogin.jpg" alt="background" style="position: absolute;width: 100%; height: auto;">
-<div class="newconten">
-            <div class="logo">
-                <a href="homeaftrelogin.html">
-                <img src="assets\img\logoetourism1.png" alt="logo" style="width: 230px;height: auto;margin: 0 385px;"></a>
+<div class="fixedmenu">
+    <div class="header" style="background: transparent; border-bottom: 0px;">
+        <div class="logo">  
+            <a href="homeaftrelogin.html">
+                <img src="assets\img\logoetourism.png" alt="logo">
+            </a>
+        </div>
+        <div class="proset">
+            <div class="profil">
+                <a href="#">
+                    <img src="assets\img\user.png">
+                    <ul  class="subprofil">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="tambahkonten.html">Add New Content</a></li>
+                    </ul>
+                </a>
             </div>
+            <div class="setting">
+                <a href="#">
+                    <img src="assets\img\gear.png">
+                    <ul  class="subsetting">
+                        <li><a href="#">Setting</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+    <div class="newconten" style="background-image: url('assets/img/bglogin.jpg')">
         <div class="judul">
-                <h4>New Content</h4>
+            <h4>New Content</h4>
         </div>
         <div class="tambahkonten">
             <form>
-                <p>New Destination: </p>
-                <input type="text" name="namawista" placeholder="New Destination" class="add"></input>
-                <p>Upload Image: </p>
-                <input type="file" name="file" class="add">
-                <p>Destination Deskription: </p>
-                <textarea placeholder="Add Deskripsi" class="add" style="width: 300px; height: 100px"></textarea>
+                <div class="add">
+                    <p>New Tourism: </p>
+                    <input type="text" name="namawista" placeholder="New Destination"></input>
+                </div>
+                <div class="add">
+                    <p>Select Type of Tourism</p>
+                    <select>
+                        <option value="Event">Event</option>
+                        <option value="Restourant">Restourant</option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Mountain">Mountain</option>
+                        <option value="Beach">Beach</option>
+                    </select>
+                </div>
+                <div class="add">
+                    <p>Upload Image of Tourism: </p>
+                    <input type="file" name="file">
+                </div>
+                <div class="add">
+                    <p>Tourism Description: </p>
+                    <textarea placeholder="Add Deskripsi"></textarea>
+                </div>
                 <div class="tombolgabung">
-                <button type="submit" class="tombol" onclick="alert('Saved Data')" >SAVE</button>
-                <button type="submit" class="tombol" onclick="alert('Data have been Posted')">POST</button>
+                    <button type="submit" class="tombol" onclick="alert('Saved Data')" >SAVE</button>
+                    <button type="submit" class="tombol" onclick="alert('Data have been Posted')">POST</button>
                 </div>
             </form>
         </div>
-    </div>
+    </div>  
 </body>
 </html>
