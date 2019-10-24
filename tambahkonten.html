@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Content</title>
+    <link href="assets\img\tour.png" rel="shorcut icon">
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+<div class="fixedmenu">
+    <div class="header" style="background: transparent; border-bottom: 0px;">
+        <div class="logo">  
+            <a href="homeaftrelogin.html">
+                <img src="assets\img\logoetourism.png" alt="logo">
+            </a>
+        </div>
+        <div class="proset">
+            <div class="profil">
+                <a href="#">
+                    <img src="assets\img\user.png">
+                    <ul  class="subprofil">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="tambahkonten.html">Add New Content</a></li>
+                    </ul>
+                </a>
+            </div>
+            <div class="setting">
+                <a href="#">
+                    <img src="assets\img\gear.png">
+                    <ul  class="subsetting">
+                        <li><a href="#">Setting</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+    <div class="newconten" style="background-image: url('assets/img/bglogin.jpg')">
+        <div class="judul">
+            <h4>New Content</h4>
+        </div>
+        <div class="tambahkonten">
+            <form>
+                <div class="add">
+                    <p>New Tourism: </p>
+                    <input type="text" name="namawista" placeholder="New Destination"></input>
+                </div>
+                <div class="add">
+                    <p>Select Type of Tourism</p>
+                    <select>
+                        <option value="Event">Event</option>
+                        <option value="Restourant">Restourant</option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Mountain">Mountain</option>
+                        <option value="Beach">Beach</option>
+                    </select>
+                </div>
+                <div class="add">
+                    <p>Upload Image of Tourism: </p>
+                    <input type="file" name="file">
+                </div>
+                <div class="add">
+                    <p>Tourism Description: </p>
+                    <textarea placeholder="Add Deskripsi"></textarea>
+                </div>
+                <div class="tombolgabung">
+                    <button type="submit" class="tombol" onclick="alert('Saved Data')" >SAVE</button>
+                    <button type="submit" class="tombol" onclick="alert('Data have been Posted')">POST</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+</body>
+</html>

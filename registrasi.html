@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Form Registrasi</title>
+        <link rel="stylesheet" href="assets\css\form.css">
+    </head>
+<html>    
+    <body>
+        <img src="assets\img\bglogin.jpg" alt="bacground">
+        <div class="box">
+            <div class="logo">
+                <a href="index.html">
+                <img src="assets\img\logoetourism1.png" alt="logo"></a>
+            </div>
+            <h2>Registrasi</h2>
+            <form action="#" method="POST" onSubmit="validasiregistrasi()" id="formtlp">
+                <div class="inputBox">
+                    <input type="text" name="nama" id="nama">
+                    <label> Username</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email">
+                    <label>Email</label>
+                </div>
+                <div class="inputBox">
+                    <span style="float:right;" id="status"></span>
+                    <input type="password" name="password" id="password" onkeyup="passwordStrength(this.value)">
+                    <p id="text" style="display: none;"> CAPSLOCK key is turned on!</p>
+                    <a href="#" onclick="pass()" id="show">Lihat Password</a>
+                    <label>Password</label>
+                </div>
+                <br>
+                <input type="button" name="" value="submit" onclick ="validasiregistrasi()">
+                <br>
+                <br>
+                <a href="Login.html">
+                <h5>Sudah pernah registrasi? Login disini</h5></a>
+            </form>
+        </div>
+        <script type="text/javascript" src="assets\javascript\script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Form Login</title>
+        <link rel="stylesheet" href="assets\css\form.css">
+    </head>
+<html>    
+    <body>
+        <img src="assets\img\bglogin.jpg" alt="background">
+        <div class="box">
+            <div class="logo">
+                <a href="index.html">
+                <img src="assets\img\logoetourism1.png" alt="logo"></a>
+            </div>
+            <h2>Login</h2>
+            <form action="#" method="POST">
+                <div class="inputBox">
+                    <input type="text" name="nama" id="nama">
+                    <label>username</label>
+                </div>
+                <div class="inputBox">
+                    <span style="float:right;" id="status"></span>
+                    <input type="password" name="password" id="password">
+                    <p id="text" style="display: none;"> CAPSLOCK key is turned on!</p>
+                    <a href="#" onclick="pass()" id="show">Lihat Password</a>
+                    <label>password</label>
+                </div>
+                <br>
+                <input type="button" name="submit" value="submit" onclick ="validasi()">
+                <br>
+                <br>
+                <a href="#">
+                <h5>Lupa kata sandi?</h5></a><br>
+                <a href="registrasi.html">
+                <h5>Belum punya akun? Registrasi disini</h5></a>
+            </form>
+        </div>
+    <script type="text/javascript" src="assets\javascript\script.js"></script>
+    </body>
+</html>

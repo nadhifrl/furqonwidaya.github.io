@@ -1,0 +1,530 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
+	background-size: cover;
+}
+
+/*Bagian untuk digunakan agar bagian header dan navbar agar fixed saat discroll*/
+.fixedmenu{
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+/*Bagian Header: Logo, Menu Login, register, profile dan setting*/
+.header {
+	background-color: #f9f9f9;
+	width: 100%;
+	height: 20%;
+	display: inline-block;
+	position: relative;
+	border-bottom: 1px solid #eeee;
+}
+.logo{
+	float: left;
+	width: 40%;    
+	padding-left: 145px;
+}
+.logo img{
+	width: 155px;
+	height: 67px;
+	padding: 9px;
+}
+.daftarmasuk{
+	float: right;
+	width: 23%;
+	padding: 17px 0;
+	font-size: 20px;
+	display: inline-block;
+	position: relative;
+}
+.daftarmasuk a{
+	width: 200px;
+	height: 60px;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}
+.login{
+	width: 66px;
+	height: auto;
+	background: #555555;
+	padding: 2px 0;
+	border-radius: 10px;
+	margin:0 5px;
+}
+.login:hover {
+	background-color: #f9f9f9;
+	color:#363737;
+}
+.register{
+	width: 66px;
+	height: auto;
+	background: #f44336;
+	padding: 2px 0;
+	border-radius: 10px;
+	margin:0 5px;
+}
+.register:hover {
+	background-color: #f9f9f9;
+	color:#363737;
+}
+.proset{
+	float: right;
+    width: 25%;
+    height: max-content;
+    padding: 17px 0;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    margin-right: -135px;
+}
+.profil{
+	width: 12%;
+	height: auto;
+	padding: 3px 5px;
+	margin: 0 7px;
+	float: left;
+}
+.profil img{
+	width: 100%;
+	height: auto;
+}
+.profil:hover ul.subprofil  {
+	display: block;
+}
+.subprofil{
+	width: 45%;
+    height: 85%;
+    padding: 5px 12px;
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    margin: -4px -56px;
+    list-style: none;
+}
+.subprofil li a {
+	width:auto;
+	height: auto;
+	display: block;
+	text-align: center;
+	z-index: 1;
+	background-color: #f9f9f9;
+	color: #363737 ;
+	font-size: 14px;
+	margin-top: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.subprofil li a:hover{
+	display: block;
+	position: relative;
+	background-color: #f44336;
+	color: #f9f9f9;
+	height: 20px;
+	width: 130px;
+}
+.setting{
+	width: 12%;
+	height: auto;
+	padding: 3px 5px;
+	margin: 0 7px;
+	float: left;
+}
+.setting img{
+	width: 100%;
+	height: auto;
+}
+.setting:hover ul.subsetting  {
+	display: block;
+}
+.subsetting{
+	width: 45%;
+    height: 85%;
+    padding: 5px 12px;
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: #f9f9f9;
+    margin: -4px -56px;
+}
+.subsetting li a {
+	width:auto;
+	height: auto;
+	display: block;
+	text-align: center;
+	z-index: 1;
+	background-color: #f9f9f9;
+	color: #363737 ;
+	font-size: 14px;
+	margin-top: 6px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.subsetting li a:hover{
+	display: block;
+	position: relative;
+	background-color: #f44336;
+	color: #f9f9f9;
+	height: 20px;
+	width: 130px;
+}
+
+
+/*Bagian Menu Navbar*/
+.menu{
+	border-bottom: 1px solid #eeee;
+}
+.menu ul{
+	margin: -5px -10px;
+	background-color: #f9f9f9;
+	text-align: center;
+	color: black;
+	padding: 12px;
+}
+.menu ul li{
+	display: inline-block;
+	position: relative;
+}
+.menu ul li a{
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #363737;
+	font-weight: bold;
+	font-size: 15px;
+}
+.menu ul li a:hover{
+	background-color: #f44336;
+	color: #f9f9f9;
+}
+.menu:hover .submenu{
+	margin-top: 10px;
+}
+.menu  ul li:hover ul.submenu  {
+	display: block;
+}
+.submenu {
+	position: absolute;
+	display: none;
+	z-index: 2;
+	width: initial;
+}
+.submenu li a {
+	width:auto;
+	display: block;
+	text-align: center;
+	z-index: 1;
+	background-color: #f9f9f9;
+	color: #363737 ;
+}
+.submenu li a:hover{
+	display: inline-block;
+	background-color: #78efe8;
+}
+
+/*Bagian slide yang berisi gambar wisata*/
+.slide{
+	background-image: url("https://cdn2.tstatic.net/travel/foto/bank/images/jember_20170813_131727.jpg");
+	width: 100%;
+	height: 440px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.7
+}
+.slide h4{
+	text-align: center;
+	font-family: sans-serif;
+	margin-top: 228px;
+	color: white;
+	font-size: 40px;
+	position: absolute;
+	width: 100%;  
+}
+
+/*Bagian utama yaitu berisi kumpulan konten yang ada*/
+.allwisata {
+	width: 1115px;
+	height: 880px;
+	padding-top: 30px;
+	text-align: center;
+	background-color: #f9f9f9;
+	margin: 0 auto;
+}
+.column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 30px;
+	padding: 0 15px;
+}
+.column img {
+	width: 100%;
+	height: 200px;
+}
+.column img {
+	width: auto;
+	height: 200px;
+}
+.wisata {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.wisata a{
+	text-decoration: none;
+	color: #555;
+}
+.namatempat {
+	padding: 0 16px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/*Bagian nomor halaman untuk melihat halaman selanjutnya dan sebelumnya*/
+#page{
+	width: 100%;
+	height: 7%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+#page a, span{
+	text-decoration: none;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 30px;
+	color: #000;
+	width: 30px;
+}
+
+/*Bagian footer: berisi logo, tentang, layanan, dan sosmed*/
+.footer{
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
+	background: #555555;
+}
+.logodown{
+	max-width: 1498px;
+	width: auto;
+	align-content: center;
+	height: 45%;
+	align-items: center;
+	text-align: -webkit-center;
+	padding: 10px;
+	display: inline-block;
+	position: relative;
+}
+.logodown img {
+	width: 9%;
+}
+.sosmed{
+	width: 100%;
+	height: 15%;
+	padding: 0 20px;
+	display: inline-block;
+	position: relative;
+}
+.sosmed img {
+	width: 20px;
+	float: right;
+	height: 20px;
+	margin: 0 5px;
+}
+.footertext{
+	width: 100%;
+	height: 20%;
+	margin: 10px 0;
+	padding: 0 20px;
+	display: inline-block;
+	position: relative;
+	color: #fff
+}
+.situs{
+	float: left;
+	position: relative;
+	font-size: 13px;
+}
+.about{
+	float: right;
+	position: relative;
+	font-size: 13px;
+}
+
+/*Bagian untuk halaman yang berisi konten yang disediakan*/
+.bgatas{
+	margin-top: 110px;
+}
+.bgatas h4{
+	font-size: 20px;
+	color: #363737;
+}
+.bgatas img{
+	width: 500px;
+	height: auto;
+	margin-top: 10px;
+}
+.deskripsi{
+	width: 50%;
+	height: auto;
+	margin: 5px 180px;
+	padding: 0px 85px;
+}
+.deskripsi p{
+	text-indent: 50px;
+	color: #363737;
+	font-size: 15px;
+	text-align: justify;
+	padding: 3px;
+}
+.deskripsi h1{
+	text-align: justify;
+	color: #363737;
+	font-size: 15px;
+	padding: 3px;
+}
+.deskripsi ol li a{
+	display: block;
+	text-align: justify;
+	color: #363737;
+	font-size: 15px;
+	padding: 3px;
+}
+
+/*Bagian untuk halaman untuk menambah konten baru*/
+.newconten{
+	position: absolute;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.judul{
+    font-size: 30px;
+    height: 50px;
+    width: auto;
+    margin-top: 65px;
+}
+.judul h4{
+	text-align: center;
+}
+.tambahkonten{
+    display: inline-block;
+    padding: 50px 63px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    background: rgba(0,0,0,.8);
+    position: relative;
+    left: 35%;
+    box-sizing: border-box;
+}
+.add p{
+	margin-top: 15px;
+	color: #03a9f4;
+}
+.add textarea{
+	width: 300px; 
+	height: 100px;
+}
+.tombolgabung{
+	padding: 10px 86px;
+    margin-top: 10px;
+}
+.tombol{
+	background:#f9f9f9;
+	margin: 0px 11px;
+}
+
+/*Bagian untuk responsive untuk ukuran 800px*/
+@media screen and (max-width: 768px) {
+/*responsive untuk bagian header*/
+.logo {
+	padding-left: 6px;
+}
+.daftarmasuk {
+	padding: 12px 8px;
+	font-size: 17px;
+	text-align: center;
+}
+.daftarmasuk a {
+	padding: 4px 11px;
+	margin: 21px 2px;
+	font-size: 10px;
+}
+.proset{
+	right:20%;
+}
+.profil{
+    width: 30%;
+    margin: unset;
+}
+.setting{
+	width: 30%;
+    margin: unset;
+}
+
+/*responsive untuk navbar*/
+.menu ul {
+	margin-top: -5px;
+	padding: 8px;
+}
+
+/*responsive bagian utama*/
+.allwisata {
+	width: 100%;
+}
+.column {
+	width: 50%;
+	height: 25%;
+}
+
+/*responsive bagian nomor halaman*/
+#page a, span {
+	font-size: 17px;
+}
+
+/*responsive bagian footer*/
+.logodown {
+	padding: 5px;
+}
+.logodown img{
+	width: 20%;
+}
+.sosmed{
+	text-align: center;
+}
+.sosmed img{
+	float: none;
+}
+.footertext{
+	text-align: center;
+}
+.situs{
+	float: none;
+}
+.about{
+	float: none;
+}
+
+/*responsive untuk halaman berisi konten*/
+.bgatas h4 {
+	font-size: 18px;
+}
+.bgatas img{
+	width: 90%;
+}
+.deskripsi {
+	width: 100%;
+	height: 100%;
+	margin: 5px 0px;
+	padding: 0px 20px;
+}
+/*responsive tambah konten*/
+.tambahkonten{
+	left: 7%;
+}
+}
