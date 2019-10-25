@@ -542,14 +542,47 @@ html, body{
 	right:20%;
 }
 .profil{
- 	width: 30%;
+	width: 30%;
 	margin: unset;
+}
+.subprofil {
+	width: auto;
+	height: auto;
+	margin: -5px -35px;
+ 	z-index: 2;
+}
+.subprofil li a {
+	width: auto;
+	height: auto;
+	font-size: 11px;
+	display: inherit;
+}
+.subprofil li a:hover{
+	display: block;
+	height: auto;
+	width: auto;
 }
 .setting{
 	width: 30%;
 	margin: unset;
 }
-
+.subsetting {
+	width: auto;
+	height: auto;
+	margin: -5px -16px;
+	z-index: 2;
+}
+.subsetting li a {
+	width: auto;
+	height: auto;
+	font-size: 11px;
+	display: inherit;
+}
+.subsetting li a:hover{
+	display: block;
+	height: auto;
+	width: auto;
+}
 /*responsive untuk navbar*/
 .menu ul {
 	margin-top: -5px;
