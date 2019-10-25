@@ -34,6 +34,26 @@ html, body{
 	height: 67px;
 	padding: 9px;
 }
+.search{
+	width: 13%;
+	height: 28%;
+	display: inline;
+	margin: 25px;
+	position: absolute;
+}
+.insearch{
+	position: relative;
+}
+.iconsearch{
+	width: 10%;
+	height: 80%;
+	margin: -18px 147px;
+	position: absolute;
+}
+.iconsearch img{
+	width:80%;
+	height: 60%;
+}
 .daftarmasuk{
 	float: right;
 	width: 23%;
@@ -76,13 +96,13 @@ html, body{
 }
 .proset{
 	float: right;
-    width: 25%;
-    height: max-content;
-    padding: 17px 0;
-    font-size: 20px;
-    display: inline-block;
-    position: relative;
-    margin-right: -135px;
+	width: 25%;
+	height: max-content;
+	padding: 17px 0;
+	font-size: 20px;
+	display: inline-block;
+	position: relative;
+	margin-right: -135px;
 }
 .profil{
 	width: 12%;
@@ -100,13 +120,13 @@ html, body{
 }
 .subprofil{
 	width: 45%;
-    height: 85%;
-    padding: 5px 12px;
-    display: none;
-    position: absolute;
-    background: #f9f9f9;
-    margin: -4px -56px;
-    list-style: none;
+	height: 85%;
+ 	padding: 5px 12px;
+	display: none;
+	position: absolute;
+	background: #f9f9f9;
+ 	margin: -4px -56px;
+	list-style: none;
 }
 .subprofil li a {
 	width:auto;
@@ -118,8 +138,8 @@ html, body{
 	color: #363737 ;
 	font-size: 14px;
 	margin-top: 6px;
-    text-decoration: none;
-    font-weight: bold;
+	text-decoration: none;
+	font-weight: bold;
 }
 .subprofil li a:hover{
 	display: block;
@@ -145,13 +165,13 @@ html, body{
 }
 .subsetting{
 	width: 45%;
-    height: 85%;
-    padding: 5px 12px;
-    display: none;
-    position: absolute;
-    list-style: none;
-    background: #f9f9f9;
-    margin: -4px -56px;
+	height: 85%;
+	padding: 5px 12px;
+	display: none;
+	position: absolute;
+	list-style: none;
+	background: #f9f9f9;
+	margin: -4px -56px;
 }
 .subsetting li a {
 	width:auto;
@@ -354,6 +374,32 @@ html, body{
 	position: relative;
 	font-size: 13px;
 }
+.about a{
+	text-decoration: none;
+	color: unset;
+}
+/*Bagian untuk text selengkapnya di slide*/
+.background1{
+	background-image: url("https://cdn2.tstatic.net/travel/foto/bank/images/jember_20170813_131727.jpg");
+	height: 618px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5; 
+	}
+.wrap{
+	background-color: rgba(0,0,0, 0.4);
+	color: white;
+	font-weight: bold;;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	width: 80%;
+	padding: 60px;
+	font-size: 23px;
+	text-align: center;
+}
 
 /*Bagian untuk halaman yang berisi konten yang disediakan*/
 .bgatas{
@@ -395,7 +441,7 @@ html, body{
 	padding: 3px;
 }
 
-/*Bagian untuk halaman untuk menambah konten baru*/
+/*Bagian untuk halaman untuk menambah konten baru, setting, dan profile*/
 .newconten{
 	position: absolute;
 	background-size: cover;
@@ -405,26 +451,55 @@ html, body{
 	background-repeat: no-repeat;
 }
 .judul{
-    font-size: 30px;
-    height: 50px;
-    width: auto;
-    margin-top: 65px;
+	font-size: 30px;
+	height: 50px;
+	width: auto;
+	margin-top: 65px;
 }
 .judul h4{
 	text-align: center;
 }
+.row {
+	width: auto;
+	text-align: center;
+}
 .tambahkonten{
-    display: inline-block;
-    padding: 50px 63px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-    background: rgba(0,0,0,.8);
-    position: relative;
-    left: 35%;
-    box-sizing: border-box;
+	display: inline-block;
+ 	padding: 50px 63px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+	background: rgba(0,0,0,.8);
+	position: relative;
+	box-sizing: border-box;
+	text-align: initial;
+}
+.gambar-add{
+	display: grid;
+	transform: translate(24%, 0%);
+}
+.gambar-add img{
+	border: 3px solid #f9f9f9;
+ 	border-radius: 10px;
+ 	margin-bottom: 10px;
+}
+.gambar-add input{
+	margin-left: 8px;
+}
+.add a{
+	color: #f44336;
+	font-weight: bold;
+   	text-decoration: none;
 }
 .add p{
 	margin-top: 15px;
 	color: #03a9f4;
+}
+.isi-add{
+	background: #f9f9f9;
+	border: 1px solid #e4dfe0;
+	border-radius: 3px;
+	width: 225px;
+	height: 24px;
+	display: inline-block;
 }
 .add textarea{
 	width: 300px; 
@@ -432,7 +507,7 @@ html, body{
 }
 .tombolgabung{
 	padding: 10px 86px;
-    margin-top: 10px;
+	margin-top: 10px;
 }
 .tombol{
 	background:#f9f9f9;
@@ -444,6 +519,14 @@ html, body{
 /*responsive untuk bagian header*/
 .logo {
 	padding-left: 6px;
+}
+.insearch {
+ 	width: 190%;
+}
+.iconsearch {
+	width: 19%;
+	height: 80%;
+	margin: -18px 105px;
 }
 .daftarmasuk {
 	padding: 12px 8px;
@@ -459,12 +542,12 @@ html, body{
 	right:20%;
 }
 .profil{
-    width: 30%;
-    margin: unset;
+ 	width: 30%;
+	margin: unset;
 }
 .setting{
 	width: 30%;
-    margin: unset;
+	margin: unset;
 }
 
 /*responsive untuk navbar*/
@@ -522,9 +605,5 @@ html, body{
 	height: 100%;
 	margin: 5px 0px;
 	padding: 0px 20px;
-}
-/*responsive tambah konten*/
-.tambahkonten{
-	left: 7%;
 }
 }
