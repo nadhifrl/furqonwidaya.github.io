@@ -6,12 +6,12 @@ function forward() {
 }
 
 function validasi() {
-		var nama = document.getElementById("nama").value;
-		var password = document.getElementById("password").value;
-		if (nama != "" && password !="") {
-			window.location.href = "homeaftrelogin.html";
-		}else{
-      			alert('Anda harus mengisi data dengan lengkap !');
+	var nama = document.getElementById("nama").value;
+	var password = document.getElementById("password").value;
+	if (nama != "" && password !="") {
+		window.location.href = "homeaftrelogin.html";
+	}else{
+      		alert('Anda harus mengisi data dengan lengkap !');
     }
 }
 
