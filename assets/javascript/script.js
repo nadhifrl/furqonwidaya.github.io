@@ -34,7 +34,7 @@ input.addEventListener("keyup", function(event) {
     text.style.display = "block";
   } else {
     text.style.display = "none"
-  }
+  })
 }
 
 
