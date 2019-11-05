@@ -77,7 +77,7 @@ switch(passed){
 
 
 function pass(){
-var pass = document.getElementById('password');
+ var pass = document.getElementById('password');
  var show = document.getElementById('show');
  if(pass.type == 'password'){
   pass.type = 'text';
@@ -86,13 +86,4 @@ var pass = document.getElementById('password');
   pass.type = 'password';
   show.innerHTML = 'Lihat Password'; 
  }
-}
-
-function lupapassword(){
-    var email = document.getElementById("email").value;
-    if (email != "") {
-      alert('please chek your email');
-    }else{
-      alert('You must fill in the data completely !');
-    }
 }
