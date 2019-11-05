@@ -35,7 +35,7 @@ input.addEventListener("keyup", function(event) {
   } else {
     text.style.display = "none"
   }
-})
+}
 
 
 function passwordStrength(p){
