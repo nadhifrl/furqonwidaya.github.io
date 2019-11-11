@@ -273,7 +273,6 @@ html, body{
 	height: 880px;
 	padding-top: 30px;
 	text-align: center;
-	background-color: #f9f9f9;
 	margin: 0 auto;
 }
 .column {
@@ -298,7 +297,7 @@ html, body{
 	color: #555;
 }
 .namatempat {
-	padding: 0 16px;
+	padding: 5px 15px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 18px;
@@ -314,11 +313,12 @@ html, body{
 }
 #page a, span{
 	text-decoration: none;
-	padding-left: 10px;
+	padding: 0 10px;
 	font-weight: bold;
 	font-size: 30px;
 	color: #000;
 	width: 30px;
+	background: #dddd;
 }
 
 /*Bagian footer: berisi logo, tentang, layanan, dan sosmed*/
