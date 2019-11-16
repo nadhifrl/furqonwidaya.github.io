@@ -648,4 +648,38 @@ html, body{
 	margin: 5px 0px;
 	padding: 0px 20px;
 }
+.slider{
+	height: 365px;
+}
+
+.textslide {
+    margin-top: 215px;
+    font-size: 25px;
+}
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 568px){
+.logo{
+	margin-left: 30px
+}
+.daftarmasuk{
+	width: 15%;
+}
+.allwisata{
+	padding-top: 560px;
+}
+.slider{
+	width: 115%;
+}
+.textslide {
+    width: 115%;
+}
+.footer{
+	width: 115%;
+}
+#page{
+	width: 115%;
+}
+*, :before, :after {
+    box-sizing: border-box;
+}
 }
