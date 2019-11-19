@@ -26,34 +26,54 @@ html, body{
 }
 .logo{
 	float: left;
-	width: 40%;    
-	padding-left: 145px;
+	width: 28%;    
+	padding-left: 110px;
 }
 .logo img{
 	width: 155px;
 	height: 67px;
 	padding: 9px;
 }
-.search{
-	width: 13%;
-	height: 28%;
-	display: inline;
-	margin: 25px;
-	position: absolute;
+
+.search {
+	width: 40%;
+	display: flex;
+	float: left;
+	margin-top: 18px;
 }
-.insearch{
-	position: relative;
+
+.searchTerm {
+	width: 100%;
+	border: 3px solid #00B4CC;
+	border-right: none;
+	padding: 5px;
+	height: 36px;
+	border-radius: 5px 0 0 5px;
+	color: #9DBFAF;
 }
-.iconsearch{
-	width: 10%;
-	height: 80%;
-	margin: -18px 147px;
-	position: absolute;
+
+.searchTerm:focus{
+	color: #00B4CC;
 }
-.iconsearch img{
-	width:80%;
-	height: 60%;
+
+.searchButton {
+	width: 50px;
+	height: 36px;
+	border: 1px solid #00B4CC;
+	background: #00B4CC;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
 }
+ 
+.searchButton img{
+	width: 95%;
+    height: 100%;
+    padding: 3px;
+}
+
 .daftarmasuk{
 	float: right;
 	width: 23%;
@@ -290,11 +310,17 @@ html, body{
 	margin-bottom: 30px;
 	padding: 0 15px;
 }
+.column1 {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 30px;
+	padding: 0 15px;
+}
 .column img {
 	width: 100%;
 	height: 200px;
 }
-.column img {
+.column1 img {
 	width: auto;
 	height: 200px;
 }
@@ -606,6 +632,11 @@ html, body{
 	width: 50%;
 	height: 25%;
 }
+.column1 {
+	width: 50%;
+	height: 25%;
+	transform: translate(110px, 0);
+}
 
 /*responsive bagian nomor halaman*/
 #page a, span {
@@ -643,10 +674,10 @@ html, body{
 	width: 90%;
 }
 .deskripsi {
-	width: 100%;
-	height: 100%;
-	margin: 5px 0px;
-	padding: 0px 20px;
+	width: 105%;
+    height: auto;
+	margin: 0px;
+	padding: 0px;
 }
 .slider{
 	height: 365px;
@@ -658,28 +689,62 @@ html, body{
 }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 568px){
+body{
+	width: fit-content;
+}
+.fixed{
+	width: 100%;
+}
+.header, .menu{
+	width: 100%;
+}
 .logo{
-	margin-left: 30px
+	margin-left: 0px;
 }
 .daftarmasuk{
-	width: 15%;
+	width: 25%;
 }
 .allwisata{
-	padding-top: 560px;
+	box-sizing: content-box;
+    transform: translate(75px, 25px);
+}
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 65px;
+    padding: 0 25px;
+}
+.column1 {
+    transform: translate(280px, 0);
+    width: 50%;
+    margin-bottom: 65px;
+    padding: 0 25px;
 }
 .slider{
 	width: 115%;
 }
 .textslide {
-    width: 115%;
+	transform: translate(215px, 0px);
 }
 .footer{
 	width: 115%;
+	margin-top: 25px;
 }
 #page{
 	width: 115%;
 }
-*, :before, :after {
-    box-sizing: border-box;
+.bgatas{
+    transform: translate(75px, 0px);
+    font-size: 14px;
+}
+}
+.bgatas h4{
+    font-size: 14px;
+}
+.deskripsi {
+    width: 105%;
+    height: auto;
+    margin: 5px 45px;
+    padding: 0px 75px;
 }
 }
