@@ -26,7 +26,7 @@ html, body{
 }
 .logo{
 	float: left;
-	width: 28%;    
+	width: 33%;    
 	padding-left: 110px;
 }
 .logo img{
@@ -286,7 +286,7 @@ html, body{
     height:100%;
     position:absolute;
     }
-.textslide{
+.wraptextslide{
 	text-align: center;
 	font-family: sans-serif;
 	margin-top: 285px;
@@ -294,6 +294,11 @@ html, body{
 	font-size: 40px;
 	position: absolute;
 	width: 100%;  
+}
+.textslide{
+	width: fit-content;
+    transform: translate(550px, 0);
+    cursor: pointer
 }
 
 /*Bagian utama yaitu berisi kumpulan konten yang ada*/
@@ -422,20 +427,27 @@ html, body{
 	background-repeat: no-repeat;
 	opacity: 0.5; 
 	}
-.wrap{
+.isislide{
 	background-color: rgba(0,0,0, 0.4);
-	color: white;
-	font-weight: bold;;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -60%);
-	width: 80%;
-	padding: 60px;
-	font-size: 23px;
-	text-align: center;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 23%;
+    left: 12%;
+    width: 80%;
+    padding: 60px;
+    font-size: 23px;
+    text-align: center;
+    height: 300px;
 }
-
+.show_hide{
+    transform: translate(7px, 41px);
+    background: transparent;
+}
+.show_hide img{
+	height: 57px;
+    width: 70px;
+}
 /*Bagian untuk halaman yang berisi konten yang disediakan*/
 .bgatas{
 	margin-top: 110px;
@@ -512,6 +524,8 @@ html, body{
 	transform: translate(24%, 0%);
 }
 .gambar-add img{
+	width:100px;
+	 height:120px;
 	border: 3px solid #f9f9f9;
  	border-radius: 10px;
  	margin-bottom: 10px;
@@ -548,12 +562,22 @@ html, body{
 	background:#f9f9f9;
 	margin: 0px 11px;
 }
+.save_profile{
+	transform: translate(60px, 25px);
+    width: 165px;
+}
+#save{
+	margin-right: 25px;
+}
+#cancel{}
+
 
 /*Bagian untuk responsive untuk ukuran 800px*/
 @media screen and (max-width: 768px) {
 /*responsive untuk bagian header*/
 .logo {
 	padding-left: 6px;
+	width: 38%;
 }
 .insearch {
  	width: 190%;
