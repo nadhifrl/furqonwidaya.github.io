@@ -42,8 +42,8 @@
         <div class="row">
             <div class="tambahkonten">
                  <div class="gambar-add">
-                   <img src="assets\img\user.png">
-                   <input type="file" name="file"></input>
+                    <img src="assets\img\user.png" id="anon">
+                    <input type="file" name="file" id="preview"></input>
                 </div>
                 <div class="add">
                     <p>Username: </p>
@@ -55,8 +55,14 @@
                     <p class="isi-add">userexperiece@rocketmail.com</p>
                     <a href="setting.html"> edit</a>
                 </div>
+                <div class="save_profile">
+                    <button id="save" onclick="save()">SAVE</button>
+                    <button id="cancel" onclick="cancel()">CANCEL</button>
+                </div>
             </div>
         </div>
     </div>    
 </body>
+<script src="assets/javascript/jquery/jquery-3.4.1.min.js"></script>
+<script src="assets/javascript/preview_image.js"></script>
 </html>
