@@ -1,8 +1,8 @@
 $(document).ready(function(){
     // Mengatur variabel
-    let speed = 100;            // kecepatan fade
+    let speed = 200;            // kecepatan fade
     let autoswitch = true;      // set automatis berganti
-    let autoswitch_speed = 2000 // kecepatan berganti
+    let autoswitch_speed = 3000 // kecepatan berganti
 
     // menambahkan class slide pertama
     $('.slide').first().addClass('active');
