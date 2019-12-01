@@ -569,8 +569,6 @@ html, body{
 #save{
 	margin-right: 25px;
 }
-#cancel{}
-
 
 /*Bagian untuk responsive untuk ukuran 800px*/
 @media screen and (max-width: 768px) {

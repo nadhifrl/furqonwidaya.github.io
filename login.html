@@ -1,41 +1,54 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title> Form Login</title>
-        <link rel="stylesheet" href="assets\css\form.css">
-    </head>
-<html>    
-    <body>
-        <img src="assets\img\bglogin.jpg" alt="background">
-        <div class="box">
-            <div class="logo">
-                <a href="index.html">
-                <img src="assets\img\logoetourism1.png" alt="logo"></a>
+<head>
+    <meta charset="utf-8">
+    <title> Form Login</title>
+    <link rel="stylesheet" href="assets\css\form.css">
+</head>    
+<body>
+    <img src="assets\img\bglogin.jpg" alt="background" width="">
+    <div class="box">
+        <div class="logo">
+            <a href="index.html">
+            <img src="assets\img\logoetourism1.png" alt="logo"></a>
+        </div>
+        <h2>Login</h2>
+        <form action="#" method="POST" id="Formlogin">
+            <div class="inputBox">
+                <input type="text" name="nama" id="nama">
+                <label>username</label>
             </div>
-            <h2>Login</h2>
-            <form action="#" method="POST">
-                <div class="inputBox">
-                    <input type="text" name="nama" id="nama">
-                    <label>username</label>
-                </div>
-                <div class="inputBox">
-                    <span style="float:right;" id="status"></span>
-                    <input type="password" name="password" id="password">
-                    <p id="text" style="display: none;"> CAPSLOCK key is turned on!</p>
-                    <a href="#" onclick="pass()" id="show">Show Password</a>
-                    <label>password</label>
-                </div>
-                <br>
-                <input type="button" name="submit" value="submit" onclick ="validasi()">
-                <br>
-                <br>
-                <a href="lupapasword">
-                <h5>forgot password ?</h5></a><br>
+            <div class="inputBox">
+                <span style="float:right;" id="status"></span>
+                <input type="password" name="password" id="password">
+                <p id="text" style="display: none;"> CAPSLOCK key is turned on!</p>
+                <a href="#" onclick="pass()" id="show" style="color: #f9f9f9">Show Password</a>
+                <label>Password</label>
+            </div>
+            <input type="button" name="submit" value="submit" onclick ="validasi()">
+             <div class="click">
+                <a href="#" id="popup" onclick="show_popup()">
+                <h5>Forgot Password ?</h5>
+                </a>
                 <a href="registrasi.html">
-                <h5>have a account? Registrasi disini</h5></a>
+                <h5>Have a account? Register here</h5>
+                </a>
+            </div>
+        </form>
+    </div>
+    <div id="isipopup">
+        <div id="popupnya">
+            <form action="#" id="forgetpass" method="post" name="forgetpass">
+                <img id="close" src="assets\img\close.png" onclick ="hide_popup()">
+                <h2 class="forget">Forgotten Your Password ?</h2>
+                <h5 class="h5">Enter your login email address below</h5>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <a onclick="check_empty()" id="submit">Request Password Reset</a>
             </form>
         </div>
-    <script src="assets/javascript/jquery/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets\javascript\script.js"></script>
-    </body>
+    </div>
+</body>
+<script src="assets/javascript/jquery/jquery-3.4.1.min.js"></script>
+<script src="assets/javascript/script.js"></script>
+<script src="assets/javascript/popup.js"></script>
 </html>

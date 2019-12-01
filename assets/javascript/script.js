@@ -5,6 +5,16 @@ function forward() {
   alert("Ini adalah Halaman Terakhir");
 }
 
+function logout(){
+      var yakin = confirm("Are sure to quit this site?");
+
+      if (yakin) {
+          window.location.href = "index.html";
+      } else {
+          alert("All Rigth you stay here :)");
+      }
+}
+
 function validasi() {
 	var nama = document.getElementById("nama").value;
 	var password = document.getElementById("password").value;
