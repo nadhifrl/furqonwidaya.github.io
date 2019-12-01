@@ -1,10 +1,10 @@
 function check_empty() {
 var email=document.getElementById('email').value;
 if (email == "") {
-alert("Fill All Fields !");
+alert("No email address specified.");
 } else {
 document.getElementById('forgetpass').submit();
-alert("Form Submitted Successfully...");
+alert("Your password has been reset, please check Your email");
 }
 }
 //Function To Display Popup
