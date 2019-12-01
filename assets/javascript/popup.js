@@ -5,6 +5,7 @@ alert("No email address specified.");
 } else {
 document.getElementById('forgetpass').submit();
 alert("Your password has been reset, please check Your email");
+window.location.href = "login.html";
 }
 }
 //Function To Display Popup
