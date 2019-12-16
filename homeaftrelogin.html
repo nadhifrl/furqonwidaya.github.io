@@ -99,117 +99,51 @@
 		</p>
 		<button class="show_hide" value="show"><img src="assets/img/back.png"></button>
 	</div>
-	<div class="allwisata">
-		<h2>"Most Popular Destination"</h2>
-		<br><br>
-		<div class="row">
-			<div class="column">
-				<div class="wisata">
-					<a href="payanganpageafter.html">
-						<img src="assets\img\payangan1.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Payangan Beach</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="dafampageafter.html">
-						<img src="assets\img\dafam.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Dafam Hotel</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="restolegianpageafter.html">
-						<img src="assets\img\legian.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Legian Restourant</h4>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column">
-				<div class="wisata">
-					<a href="gambirpageafter.html">
-						<img src="assets\img\gambir0.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Gambir Mountain</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="jfcpageafter.html">
-						<img src="assets\img\carnivalofjember.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">JFC</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="cempakahillpageafter.html">
-						<img src="assets\img\cempakahil.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Cempaka Hill</h4>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column">
-				<div class="wisata">
-					<a href="pasangpageafter.html">
-						<img src="assets\img\gunungpasang.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Pasang Mountain</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="tajempageafter.html">
-						<img src="assets\img\tajem.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Tajem</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column1">
-				<div class="wisata">
-					<a href="papumapageafter.html">
-						<img src="assets\img\papumanight.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Papuma Beach</h4>
-					</a>
-				</div>
-			</div>
-		</div>
+	<div class="allwisata" id="allwisata">
+
 	</div>
 	<div id="page">
-		<a href="#" onclick="back()"><</a>
-			<span> 1</span>
-		<a href="#" onclick="forward()">></a>
+		<a href="#" class="klik" id="sebelum">< </a>
+		<a href="#"class="klik" id="sesudah">> </a>
 	</div>
 </body>
 <!-- Bagian footer -->
 <div class="footer">
-    <div class="logodown">
-        <a href="homeaftrelogin.html">
-        <img src="assets\img\logoetourism.png" alt="logo">
-        </a>
-    </div>
-    <div class="sosmed">
-        <a href="https://instagram.com"><img src="assets\img\instagram-png-instagram-png-logo-1455.png" alt="Instagram"></a>
+	<div class="logodown">
+		<a href="index.html">
+		<img src="assets\img\logoetourism1.png" alt="logo">
+		</a>
+	</div>
+	<div class="sosmed">
+		<a href="https://instagram.com"><img src="assets\img\instagram-png-instagram-png-logo-1455.png" alt="Instagram"></a>
         <a href="https://twitter.com"><img src="assets\img\icons8-twitter-48.png"  alt="Twitter"></a>
         <a href="https://facebook.com"><img src="assets\img\icons8-facebook-old-48.png" alt="Facebook"></a>
-    </div>
-    <div class="footertext">
-        <div class="situs">
-            <p>© 2019 jemberguidetourism.com. All rights Reserved. </p>
-        </div>
-        <div class="about">
-            <p><a href="privacy-police.html" target="_blank">Privacy Police</a> | <a href="terms-of-use.html" target="_blank">Terms of use</a> | <a href="support.html" target="_blank">Support</a> | <a href="about.html" target="_blank">About Us</p></a>
-        </div>
-    </div>
+	</div>
+	<div class="footertext">
+		<div class="situs">
+			<p>© 2019 jemberguidetourism.com All rights Reserved.</p>
+		</div>
+		<div class="about">
+			<p>Privacy Police | Terms of use | Support | About Us</p>
+		</div>
+	</div>
 </div>
 <script src="assets/javascript/jquery/jquery-3.4.1.min.js"></script>
 <script src="assets/javascript/slider.js"></script>
 <script src="assets/javascript/isislide.js"></script>
 <script src="assets/javascript/script.js"></script>
-</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+		$('.klik').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "sebelum"){
+				$('#allwisata').load('home1.html');						
+			}else if(menu == "sesudah"){
+				$('#allwisata').load('home2.html');		
+			}
+		});
+		// halaman yang di load default pertama kali
+		$('#allwisata').load('home1.html');						
+	});
+</script>
