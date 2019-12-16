@@ -83,92 +83,12 @@
 		</p>
 		<button class="show_hide" value="show"><img src="assets/img/back.png"></button>
 	</div>
-	<div class="allwisata">
-		<h2>"Most Popular Destination"</h2>
-		<br><br>
-		<div class="row">
-			<div class="column">
-				<div class="wisata">
-					<a href="payanganpage.html">
-						<img src="assets\img\payangan1.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Payangan Beach</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="dafampage.html">
-						<img src="assets\img\dafam.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Dafam Hotel</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="restolegianpage.html">
-						<img src="assets\img\legian.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Legian Restourant</h4>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column">
-				<div class="wisata">
-					<a href="gambirpage.html">
-						<img src="assets\img\gambir0.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Gambir Mountain</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="jfcpage.html">
-						<img src="assets\img\carnivalofjember.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">JFC</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="cempakahillpage.html">
-						<img src="assets\img\cempakahil.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Cempaka Hill</h4>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column">
-				<div class="wisata">
-					<a href="pasangpage.html">
-						<img src="assets\img\gunungpasang.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Pasang Mountain</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column">
-				<div class="wisata">
-					<a href="tajempage.html">
-						<img src="assets\img\tajem.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Tajem</h4>
-					</a>
-				</div>
-			</div>
-			<div class="column1">
-				<div class="wisata">
-					<a href="papumapage.html">
-						<img src="assets\img\papumanight.jpg" alt="wisata" style="width: 100%">
-						<h4 class="namatempat">Papuma Beach</h4>
-					</a>
-				</div>
-			</div>
-		</div>
+	<div class="allwisata" id="allwisata">
+
 	</div>
 	<div id="page">
-		<a href="#" onclick="back()"><</a>
-			<span> 1</span>
-		<a href="#" onclick="forward()">></a>
+		<a href="#" class="klik" id="sebelum">< </a>
+		<a href="#"class="klik" id="sesudah">> </a>
 	</div>
 </body>
 <!-- Bagian footer -->
@@ -196,4 +116,22 @@
 <script src="assets/javascript/slider.js"></script>
 <script src="assets/javascript/isislide.js"></script>
 <script src="assets/javascript/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+		$('.klik').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "sebelum"){
+				$('#allwisata').load('home1.html');						
+			}else if(menu == "sesudah"){
+				$('#allwisata').load('home2.html');		
+			}
+		});
+ 
+ 
+		// halaman yang di load default pertama kali
+		$('#allwisata').load('home1.html');						
+ 
+	});
+</script>
 </html>

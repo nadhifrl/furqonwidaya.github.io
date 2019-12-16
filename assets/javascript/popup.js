@@ -3,9 +3,9 @@ var email=document.getElementById('email').value;
 if (email == "") {
 alert("No email address specified.");
 } else {
-document.getElementById('forgetpass').submit();
+document.getElementById('forgetpass').submit("login.html");
 alert("Your password has been reset, please check Your email");
-window.location.href = "login.html";
+
 }
 }
 //Function To Display Popup
