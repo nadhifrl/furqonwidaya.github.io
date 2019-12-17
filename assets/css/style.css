@@ -76,7 +76,7 @@ html, body{
 
 .daftarmasuk{
 	float: right;
-	width: 23%;
+	width: 15%;
 	padding: 17px 0;
 	font-size: 20px;
 	display: inline-block;
@@ -351,7 +351,7 @@ html, body{
 	display: inline-block;
 	position: relative;
 }
-#page a, span{
+#page a{
 	text-decoration: none;
 	padding: 0 10px;
 	font-weight: bold;
@@ -359,6 +359,7 @@ html, body{
 	color: #000;
 	width: 30px;
 	background: #dddd;
+	margin: 0 5px;
 }
 
 /*Bagian footer: berisi logo, tentang, layanan, dan sosmed*/
