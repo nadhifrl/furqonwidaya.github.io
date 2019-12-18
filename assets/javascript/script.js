@@ -1,10 +1,3 @@
-function back() {
-  alert("Ini adalah Halaman Pertama");
-}
-function forward() {
-  alert("Ini adalah Halaman Terakhir");
-}
-
 function logout(){
       var yakin = confirm("Are sure to quit this site?");
 
